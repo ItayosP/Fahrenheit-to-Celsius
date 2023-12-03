@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.util.Scanner;
 
 public class Main {
@@ -26,5 +25,7 @@ public class Main {
         } else {
             System.out.println("choose only 1 or 2.");
         }
+
+        s.close();
     }
 }
