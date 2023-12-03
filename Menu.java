@@ -5,36 +5,28 @@ public class Menu {
         MyFrame frame = new MyFrame();
         MyLabel label = new MyLabel();
         MyLabel label2 = new MyLabel();
-        JTextField text1 = new JTextField();
-        JTextField text2 = new JTextField();
-        JTextField text3 = new JTextField();
-        JTextField text4 = new JTextField();
+        MyLabel label3 = new MyLabel();
+        MyLabel label4 = new MyLabel();
 
         label2.setText("Enter Celsius: ");
         label2.setBounds(50, 500, 200, 50);
 
-        text1.setSize(200, 50);
-        text1.setVisible(true);
-        text1.setLocation(250, 210);
+        //label3
+        label3.setText("hello");
+        label3.setSize(200, 50);
+        label3.setVisible(true);
+        label3.setLocation(550, 210);
 
-        text2.setSize(200, 50);
-        text2.setVisible(true);
-        text2.setLocation(550, 210);
-
-        text3.setSize(200, 50);
-        text3.setVisible(true);
-        text3.setLocation(250, 500);
-
-        text4.setSize(200, 50);
-        text4.setVisible(true);
-        text4.setLocation(550, 500);
+        //label4
+        label4.setText("hello");
+        label4.setSize(200, 50);
+        label4.setVisible(true);
+        label4.setLocation(550, 500);
 
         frame.add(label);
         frame.add(label2);
-        frame.add(text1);
-        frame.add(text2);
-        frame.add(text3);
-        frame.add(text4);
+        frame.add(label3);
+        frame.add(label4);
 
         frame.repaint();
     }
