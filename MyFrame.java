@@ -5,8 +5,8 @@ import javax.swing.*;
 
 public class MyFrame extends JFrame implements ActionListener{
 
-    private double ftocResult; // Variable to store ftoc result
-    private double ctofResult; // Variable to store ctof result
+    public double ftocResult; // Variable to store ftoc result
+    public double ctofResult; // Variable to store ctof result
 
     private static final ActionListener MyFrame = null;
     JButton myButton1 = new JButton();
@@ -69,7 +69,7 @@ public class MyFrame extends JFrame implements ActionListener{
 
     public double getCtoFResult() {
         return ctofResult;
-    }
+    }   
     
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -78,6 +78,7 @@ public class MyFrame extends JFrame implements ActionListener{
             try {
                 double f = Double.parseDouble(fString);
                 double ftoc = (f - 32) * 5 / 9;
+                ftocResult = ftoc;
                 System.out.println(ftoc);
             } catch (NumberFormatException ex) {
                 System.out.println("Input is not a valid double");
@@ -87,10 +88,15 @@ public class MyFrame extends JFrame implements ActionListener{
             try {
                 double c = Double.parseDouble(cString);
                 double ctof = c * (9.0 / 5.0) + 32;
+                ctofResult = ctof;
                 System.out.println(ctof);
             } catch (NumberFormatException ex) {
                 System.out.println("Input is not a valid double");
             }
         }
-    }    
+    } 
 }
+
+//MyFrame == classA
+
+//Menu == classB

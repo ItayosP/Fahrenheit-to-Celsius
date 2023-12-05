@@ -7,6 +7,9 @@ public class Menu {
         MyLabel label3 = new MyLabel();
         MyLabel label4 = new MyLabel();
 
+        while (true){
+
+        
         double ftocValue = frame.getFtoCResult();
         double ctofValue = frame.getCtoFResult();
 
@@ -31,5 +34,6 @@ public class Menu {
         frame.add(label4);
 
         frame.repaint();
+        }
     }
 }
