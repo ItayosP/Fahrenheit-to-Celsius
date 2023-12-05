@@ -79,7 +79,6 @@ public class MyFrame extends JFrame implements ActionListener{
                 double f = Double.parseDouble(fString);
                 double ftoc = (f - 32) * 5 / 9;
                 ftocResult = ftoc;
-                System.out.println(ftoc);
             } catch (NumberFormatException ex) {
                 System.out.println("Input is not a valid double");
             }
@@ -89,7 +88,6 @@ public class MyFrame extends JFrame implements ActionListener{
                 double c = Double.parseDouble(cString);
                 double ctof = c * (9.0 / 5.0) + 32;
                 ctofResult = ctof;
-                System.out.println(ctof);
             } catch (NumberFormatException ex) {
                 System.out.println("Input is not a valid double");
             }

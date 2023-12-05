@@ -5,6 +5,6 @@ to download this project for some reason
 
 git clone https://github.com/ItayosP/Fahrenheit-to-Celsius
 
-cd F_TO_C
+cd Fahrenheit-to-Celsius
 
 run Menu.java
