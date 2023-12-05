@@ -1,10 +1,6 @@
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.NumberFormat;
-import java.text.ParseException;
-import java.util.Locale;
-
 import javax.swing.*;
 
 public class MyFrame extends JFrame implements ActionListener{
@@ -69,26 +65,23 @@ public class MyFrame extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == myButton1) {
+            String fString = text1.getText();
             try {
-                double ftoc = Double.parseDouble(text1.getText());
-                double f = (ftoc - 32) * 5 / 9;
-                System.out.println(f);
+                double f = Double.parseDouble(fString);
+                double ftoc = (f - 32) * 5 / 9;
+                System.out.println(ftoc);
             } catch (NumberFormatException ex) {
-                System.out.println("Input for Fahrenheit to Celsius is not a valid double");
+                System.out.println("Input is not a valid double");
             }
         } else if (e.getSource() == myButton2) {
-            String textValue = text2.getText().trim();
-            System.out.println("Input value for Celsius to Fahrenheit: " + textValue);
-
+            String cString = text3.getText();
             try {
-                NumberFormat format = NumberFormat.getInstance(Locale.getDefault());
-                Number number = format.parse(textValue);
-                double ctof = number.doubleValue();
-                double f = ctof * (9.0 / 5.0) + 32;
-                System.out.println(f);
-            } catch (ParseException ex) {
-                System.out.println("Input for Celsius to Fahrenheit is not a valid double");
+                double c = Double.parseDouble(cString);
+                double ctof = c * (9.0 / 5.0) + 32;
+                System.out.println(ctof);
+            } catch (NumberFormatException ex) {
+                System.out.println("Input is not a valid double");
             }
         }
-    }
+    }    
 }

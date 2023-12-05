@@ -1,7 +1,8 @@
-import javax.swing.*;
-
 public class Menu {
     public static void main(String[] args) {
+
+        
+
         MyFrame frame = new MyFrame();
         MyLabel label = new MyLabel();
         MyLabel label2 = new MyLabel();
