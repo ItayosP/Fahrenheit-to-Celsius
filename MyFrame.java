@@ -5,6 +5,9 @@ import javax.swing.*;
 
 public class MyFrame extends JFrame implements ActionListener{
 
+    private double ftocResult; // Variable to store ftoc result
+    private double ctofResult; // Variable to store ctof result
+
     private static final ActionListener MyFrame = null;
     JButton myButton1 = new JButton();
     JButton myButton2 = new JButton();
@@ -60,7 +63,13 @@ public class MyFrame extends JFrame implements ActionListener{
         this.add(text4);
     }
 
+    public double getFtoCResult() {
+        return ftocResult;
+    }
 
+    public double getCtoFResult() {
+        return ctofResult;
+    }
     
     @Override
     public void actionPerformed(ActionEvent e) {
