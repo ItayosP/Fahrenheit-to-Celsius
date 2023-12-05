@@ -96,7 +96,3 @@ public class MyFrame extends JFrame implements ActionListener{
         }
     } 
 }
-
-//MyFrame == classA
-
-//Menu == classB
